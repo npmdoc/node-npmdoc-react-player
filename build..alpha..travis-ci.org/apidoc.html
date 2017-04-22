@@ -1,0 +1,2309 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/CookPete/react-player"
+
+    >react-player (v0.15.0)</a>
+</h1>
+<h4>A react component for playing a variety of URLs, including file paths, YouTube, SoundCloud, Streamable, Vidme, Vimeo and Wistia</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player">module react-player</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.react-player">
+            function <span class="apidocSignatureSpan"></span>react-player
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.fileConfig">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.fileConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.height">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.height
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onReady">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.onReady
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playing">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.playing
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.soundcloudConfig">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.soundcloudConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.style">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.url">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.url
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vidmeConfig">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.vidmeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vimeoConfig">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.vimeoConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.volume">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.volume
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.width">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.youtubeConfig">
+            function <span class="apidocSignatureSpan">react-player.</span>propTypes.youtubeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-player.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.defaultProps">module react-player.defaultProps</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-player.defaultProps.</span>controls</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-player.defaultProps.</span>hidden</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-player.defaultProps.</span>loop</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-player.defaultProps.</span>playing</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-player.defaultProps.</span>playsinline</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onBuffer">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onBuffer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onDuration">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onDuration
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onEnded">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onEnded
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onError">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onPause">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onPause
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onPlay">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onPlay
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onProgress">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onProgress
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onReady">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onReady
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.defaultProps.onStart">
+            function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-player.defaultProps.</span>height</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-player.defaultProps.</span>playbackRate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-player.defaultProps.</span>progressFrequency</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-player.defaultProps.</span>volume</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-player.defaultProps.</span>width</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.defaultProps.</span>fileConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.defaultProps.</span>soundcloudConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.defaultProps.</span>vidmeConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.defaultProps.</span>vimeoConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-player.defaultProps.</span>youtubeConfig</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes">module react-player.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.className">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>className
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.controls">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>controls
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.fileConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>fileConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.height">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>height
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.hidden">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>hidden
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.loop">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>loop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onBuffer">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onBuffer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onDuration">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onDuration
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onEnded">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onEnded
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onError">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onPause">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onPause
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onPlay">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onPlay
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onProgress">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onProgress
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onReady">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onReady
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onStart">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playbackRate">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>playbackRate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playing">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>playing
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playsinline">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>playsinline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.progressFrequency">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>progressFrequency
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.soundcloudConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>soundcloudConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.style">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.url">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>url
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vidmeConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>vidmeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vimeoConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>vimeoConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.volume">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>volume
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.width">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.youtubeConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>youtubeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.fileConfig">module react-player.propTypes.fileConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.fileConfig.fileConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>fileConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.fileConfig.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.fileConfig.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.height">module react-player.propTypes.height</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.height.height">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>height
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.height.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.height.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.onReady">module react-player.propTypes.onReady</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onReady.onReady">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>onReady
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.onReady.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.onReady.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.playing">module react-player.propTypes.playing</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playing.playing">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>playing
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.playing.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.playing.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.soundcloudConfig">module react-player.propTypes.soundcloudConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.soundcloudConfig.soundcloudConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>soundcloudConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.soundcloudConfig.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.soundcloudConfig.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.style">module react-player.propTypes.style</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.style.style">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.style.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.style.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.url">module react-player.propTypes.url</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.url.url">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>url
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.url.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.url.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.vidmeConfig">module react-player.propTypes.vidmeConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vidmeConfig.vidmeConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>vidmeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vidmeConfig.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.vidmeConfig.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.vimeoConfig">module react-player.propTypes.vimeoConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vimeoConfig.vimeoConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>vimeoConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.vimeoConfig.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.vimeoConfig.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.volume">module react-player.propTypes.volume</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.volume.volume">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>volume
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.volume.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.volume.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.width">module react-player.propTypes.width</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.width.width">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>width
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.width.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.width.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.propTypes.youtubeConfig">module react-player.propTypes.youtubeConfig</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.youtubeConfig.youtubeConfig">
+            function <span class="apidocSignatureSpan">react-player.propTypes.</span>youtubeConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.propTypes.youtubeConfig.isRequired">
+            function <span class="apidocSignatureSpan">react-player.propTypes.youtubeConfig.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-player.utils">module react-player.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-player.utils.parseStartTime">
+            function <span class="apidocSignatureSpan">react-player.utils.</span>parseStartTime
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player" id="apidoc.module.react-player">module react-player</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.react-player" id="apidoc.element.react-player.react-player">
+        function <span class="apidocSignatureSpan"></span>react-player
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactPlayer() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, ReactPlayer);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ReactPlayer.__proto__ || Object.getPrototypeOf(ReactPlayer
+)).call.apply(_ref, [this].concat(args))), _this), _this.seekTo = function (fraction) {
+    if (_this.player) {
+      _this.player.seekTo(fraction);
+    }
+  }, _this.getDuration = function () {
+    if (!_this.player) return null;
+    return _this.player.getDuration();
+  }, _this.getCurrentTime = function () {
+    if (!_this.player) return null;
+    var duration = _this.player.getDuration();
+    var fractionPlayed = _this.player.getFractionPlayed();
+    if (duration === null || fractionPlayed === null) {
+      return null;
+    }
+    return fractionPlayed * duration;
+  }, _this.progress = function () {
+    if (_this.props.url &#x26;&#x26; _this.player) {
+      var loaded = _this.player.getFractionLoaded() || 0;
+      var played = _this.player.getFractionPlayed() || 0;
+      var duration = _this.player.getDuration();
+      var progress = {};
+      if (loaded !== _this.prevLoaded) {
+        progress.loaded = loaded;
+        if (duration) {
+          progress.loadedSeconds = progress.loaded * duration;
+        }
+      }
+      if (played !== _this.prevPlayed) {
+        progress.played = played;
+        if (duration) {
+          progress.playedSeconds = progress.played * duration;
+        }
+      }
+      if (progress.loaded || progress.played) {
+        _this.props.onProgress(progress);
+      }
+      _this.prevLoaded = loaded;
+      _this.prevPlayed = played;
+    }
+    _this.progressTimeout = setTimeout(_this.progress, _this.props.progressFrequency);
+  }, _this.ref = function (player) {
+    _this.player = player;
+  }, _this.renderPlayer = function (Player) {
+    var active = Player.canPlay(_this.props.url);
+
+    var _this$props = _this.props,
+        youtubeConfig = _this$props.youtubeConfig,
+        soundcloudConfig = _this$props.soundcloudConfig,
+        vimeoConfig = _this$props.vimeoConfig,
+        vidmeConfig = _this$props.vidmeConfig,
+        fileConfig = _this$props.fileConfig,
+        activeProps = _objectWithoutProperties(_this$props, [&#x27;youtubeConfig&#x27;, &#x27;soundcloudConfig&#x27;, &#x27;vimeoConfig&#x27;, &#x27;vidmeConfig&#x27;, &#x27;
+fileConfig&#x27;]);
+
+    var props = active ? _extends({}, activeProps, { ref: _this.ref }) : {};
+    return _react2[&#x27;default&#x27;].createElement(Player, _extends({
+      key: Player.displayName,
+      youtubeConfig: youtubeConfig,
+      soundcloudConfig: soundcloudConfig,
+      vimeoConfig: vimeoConfig,
+      vidmeConfig: vidmeConfig,
+      fileConfig: fileConfig
+    }, props));
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.fileConfig" id="apidoc.element.react-player.propTypes.fileConfig">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.fileConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.fileConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.height" id="apidoc.element.react-player.propTypes.height">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.height
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.height = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onReady" id="apidoc.element.react-player.propTypes.onReady">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.onReady
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.onReady = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playing" id="apidoc.element.react-player.propTypes.playing">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.playing
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.playing = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.soundcloudConfig" id="apidoc.element.react-player.propTypes.soundcloudConfig">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.soundcloudConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.soundcloudConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.style" id="apidoc.element.react-player.propTypes.style">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.url" id="apidoc.element.react-player.propTypes.url">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.url
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.url = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vidmeConfig" id="apidoc.element.react-player.propTypes.vidmeConfig">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.vidmeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.vidmeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vimeoConfig" id="apidoc.element.react-player.propTypes.vimeoConfig">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.vimeoConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.vimeoConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.volume" id="apidoc.element.react-player.propTypes.volume">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.volume
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.volume = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.width" id="apidoc.element.react-player.propTypes.width">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.youtubeConfig" id="apidoc.element.react-player.propTypes.youtubeConfig">
+        function <span class="apidocSignatureSpan">react-player.</span>propTypes.youtubeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.youtubeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.defaultProps" id="apidoc.module.react-player.defaultProps">module react-player.defaultProps</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onBuffer" id="apidoc.element.react-player.defaultProps.onBuffer">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onBuffer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onBuffer() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onDuration" id="apidoc.element.react-player.defaultProps.onDuration">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onDuration
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onDuration() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onEnded" id="apidoc.element.react-player.defaultProps.onEnded">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onEnded
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onEnded() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.onPlay();
+  if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+  if (data.event === &#x27;finish&#x27;) _this.<span class="apidocCodeKeywordSpan">onEnded</span>();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+  var _this$props = _this.props,
+      loop = _this$props.loop,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onError" id="apidoc.element.react-player.defaultProps.onError">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onError() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return Promise.resolve(songData[url]);
+    }
+    return (0, _fetchJsonp2[&#x27;default&#x27;])(RESOLVE_URL + &#x27;?url=&#x27; + url + &#x27;&#x26;client_id=&#x27; + this.clientId
+).then(function (response) {
+      if (response.ok) {
+        songData[url] = response.json();
+        return songData[url];
+      } else {
+        _this2.props.<span class="apidocCodeKeywordSpan">onError</span>(new Error(&#x27;SoundCloud track could not be resolved&#
+x27;));
+      }
+    });
+  }
+}, {
+  key: &#x27;load&#x27;,
+  value: function load(url) {
+    var _this3 = this;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onPause" id="apidoc.element.react-player.defaultProps.onPause">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onPause
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onPause() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;play&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.onPlay();
+  if (data.event === &#x27;pause&#x27;) _this.props.<span class="apidocCodeKeywordSpan">onPause</span>();
+  if (data.event === &#x27;finish&#x27;) _this.onEnded();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+  var _this$props = _this.props,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onPlay" id="apidoc.element.react-player.defaultProps.onPlay">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onPlay
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onPlay() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;loadProgress&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;play&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.<span class="apidocCodeKeywordSpan">onPlay</span>();
+  if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+  if (data.event === &#x27;finish&#x27;) _this.onEnded();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onProgress" id="apidoc.element.react-player.defaultProps.onProgress">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onProgress
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onProgress() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onReady" id="apidoc.element.react-player.defaultProps.onReady">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onReady
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onReady() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+if (data.event === &#x27;play&#x27;) _this.onPlay();
+if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+if (data.event === &#x27;finish&#x27;) _this.onEnded();
+if (data.method === &#x27;getDuration&#x27;) {
+  _this.duration = data.value; // Store for use later
+  _this.<span class="apidocCodeKeywordSpan">onReady</span>();
+}
+    }, _this.onEnded = function () {
+var _this$props = _this.props,
+    loop = _this$props.loop,
+    onEnded = _this$props.onEnded;
+
+if (loop) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.defaultProps.onStart" id="apidoc.element.react-player.defaultProps.onStart">
+        function <span class="apidocSignatureSpan">react-player.defaultProps.</span>onStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function onStart() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes" id="apidoc.module.react-player.propTypes">module react-player.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.className" id="apidoc.element.react-player.propTypes.className">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>className
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">className = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.controls" id="apidoc.element.react-player.propTypes.controls">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>controls
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">controls = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.fileConfig" id="apidoc.element.react-player.propTypes.fileConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>fileConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fileConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.height" id="apidoc.element.react-player.propTypes.height">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>height
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">height = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.hidden" id="apidoc.element.react-player.propTypes.hidden">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>hidden
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hidden = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.loop" id="apidoc.element.react-player.propTypes.loop">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>loop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onBuffer" id="apidoc.element.react-player.propTypes.onBuffer">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onBuffer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onBuffer = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onDuration" id="apidoc.element.react-player.propTypes.onDuration">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onDuration
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDuration = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onEnded" id="apidoc.element.react-player.propTypes.onEnded">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onEnded
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onEnded = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.onPlay();
+  if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+  if (data.event === &#x27;finish&#x27;) _this.<span class="apidocCodeKeywordSpan">onEnded</span>();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+  var _this$props = _this.props,
+      loop = _this$props.loop,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onError" id="apidoc.element.react-player.propTypes.onError">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onError = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return Promise.resolve(songData[url]);
+    }
+    return (0, _fetchJsonp2[&#x27;default&#x27;])(RESOLVE_URL + &#x27;?url=&#x27; + url + &#x27;&#x26;client_id=&#x27; + this.clientId
+).then(function (response) {
+      if (response.ok) {
+        songData[url] = response.json();
+        return songData[url];
+      } else {
+        _this2.props.<span class="apidocCodeKeywordSpan">onError</span>(new Error(&#x27;SoundCloud track could not be resolved&#
+x27;));
+      }
+    });
+  }
+}, {
+  key: &#x27;load&#x27;,
+  value: function load(url) {
+    var _this3 = this;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onPause" id="apidoc.element.react-player.propTypes.onPause">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onPause
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onPause = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;play&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.onPlay();
+  if (data.event === &#x27;pause&#x27;) _this.props.<span class="apidocCodeKeywordSpan">onPause</span>();
+  if (data.event === &#x27;finish&#x27;) _this.onEnded();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+  var _this$props = _this.props,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onPlay" id="apidoc.element.react-player.propTypes.onPlay">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onPlay
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onPlay = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;loadProgress&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;play&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;pause&#x27;);
+    _this.postMessage(&#x27;addEventListener&#x27;, &#x27;finish&#x27;);
+  }
+  if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+  if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+  if (data.event === &#x27;play&#x27;) _this.<span class="apidocCodeKeywordSpan">onPlay</span>();
+  if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+  if (data.event === &#x27;finish&#x27;) _this.onEnded();
+  if (data.method === &#x27;getDuration&#x27;) {
+    _this.duration = data.value; // Store for use later
+    _this.onReady();
+  }
+}, _this.onEnded = function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onProgress" id="apidoc.element.react-player.propTypes.onProgress">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onProgress
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onProgress = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onReady" id="apidoc.element.react-player.propTypes.onReady">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onReady
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onReady = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+if (data.event === &#x27;play&#x27;) _this.onPlay();
+if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+if (data.event === &#x27;finish&#x27;) _this.onEnded();
+if (data.method === &#x27;getDuration&#x27;) {
+  _this.duration = data.value; // Store for use later
+  _this.<span class="apidocCodeKeywordSpan">onReady</span>();
+}
+    }, _this.onEnded = function () {
+var _this$props = _this.props,
+    loop = _this$props.loop,
+    onEnded = _this$props.onEnded;
+
+if (loop) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onStart" id="apidoc.element.react-player.propTypes.onStart">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onStart = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playbackRate" id="apidoc.element.react-player.propTypes.playbackRate">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>playbackRate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">playbackRate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (!this.isReady || !this.player || !this.player.volume) return;
+    this.player.volume(fraction);
+  }
+}, {
+  key: &#x27;setPlaybackRate&#x27;,
+  value: function setPlaybackRate(rate) {
+    if (!this.isReady || !this.player || !this.player.playbackRate) return;
+    this.player.<span class="apidocCodeKeywordSpan">playbackRate</span>(rate);
+  }
+}, {
+  key: &#x27;getDuration&#x27;,
+  value: function getDuration() {
+    if (!this.isReady || !this.player || !this.player.duration) return;
+    return this.player.duration();
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playing" id="apidoc.element.react-player.propTypes.playing">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>playing
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">playing = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playsinline" id="apidoc.element.react-player.propTypes.playsinline">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>playsinline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">playsinline = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.progressFrequency" id="apidoc.element.react-player.propTypes.progressFrequency">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>progressFrequency
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">progressFrequency = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.soundcloudConfig" id="apidoc.element.react-player.propTypes.soundcloudConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>soundcloudConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">soundcloudConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.style" id="apidoc.element.react-player.propTypes.style">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.url" id="apidoc.element.react-player.propTypes.url">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>url
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">url = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vidmeConfig" id="apidoc.element.react-player.propTypes.vidmeConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>vidmeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vidmeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vimeoConfig" id="apidoc.element.react-player.propTypes.vimeoConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>vimeoConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vimeoConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.volume" id="apidoc.element.react-player.propTypes.volume">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>volume
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">volume = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (!this.isReady || !this.player) return;
+    this.player.time(this.getDuration() * fraction);
+  }
+}, {
+  key: &#x27;setVolume&#x27;,
+  value: function setVolume(fraction) {
+    if (!this.isReady || !this.player || !this.player.volume) return;
+    this.player.<span class="apidocCodeKeywordSpan">volume</span>(fraction);
+  }
+}, {
+  key: &#x27;setPlaybackRate&#x27;,
+  value: function setPlaybackRate(rate) {
+    if (!this.isReady || !this.player || !this.player.playbackRate) return;
+    this.player.playbackRate(rate);
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.width" id="apidoc.element.react-player.propTypes.width">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.youtubeConfig" id="apidoc.element.react-player.propTypes.youtubeConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>youtubeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">youtubeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.fileConfig" id="apidoc.module.react-player.propTypes.fileConfig">module react-player.propTypes.fileConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.fileConfig.fileConfig" id="apidoc.element.react-player.propTypes.fileConfig.fileConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>fileConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fileConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.fileConfig.isRequired" id="apidoc.element.react-player.propTypes.fileConfig.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.fileConfig.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.height" id="apidoc.module.react-player.propTypes.height">module react-player.propTypes.height</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.height.height" id="apidoc.element.react-player.propTypes.height.height">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>height
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">height = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.height.isRequired" id="apidoc.element.react-player.propTypes.height.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.height.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.onReady" id="apidoc.module.react-player.propTypes.onReady">module react-player.propTypes.onReady</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onReady.onReady" id="apidoc.element.react-player.propTypes.onReady.onReady">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>onReady
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onReady = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (data.event === &#x27;playProgress&#x27;) _this.fractionPlayed = data.data.percent;
+if (data.event === &#x27;loadProgress&#x27;) _this.fractionLoaded = data.data.percent;
+if (data.event === &#x27;play&#x27;) _this.onPlay();
+if (data.event === &#x27;pause&#x27;) _this.props.onPause();
+if (data.event === &#x27;finish&#x27;) _this.onEnded();
+if (data.method === &#x27;getDuration&#x27;) {
+  _this.duration = data.value; // Store for use later
+  _this.<span class="apidocCodeKeywordSpan">onReady</span>();
+}
+    }, _this.onEnded = function () {
+var _this$props = _this.props,
+    loop = _this$props.loop,
+    onEnded = _this$props.onEnded;
+
+if (loop) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.onReady.isRequired" id="apidoc.element.react-player.propTypes.onReady.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.onReady.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.playing" id="apidoc.module.react-player.propTypes.playing">module react-player.propTypes.playing</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playing.playing" id="apidoc.element.react-player.propTypes.playing.playing">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>playing
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">playing = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.playing.isRequired" id="apidoc.element.react-player.propTypes.playing.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.playing.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.soundcloudConfig" id="apidoc.module.react-player.propTypes.soundcloudConfig">module react-player.propTypes.soundcloudConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.soundcloudConfig.soundcloudConfig" id="apidoc.element.react-player.propTypes.soundcloudConfig.soundcloudConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>soundcloudConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">soundcloudConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.soundcloudConfig.isRequired" id="apidoc.element.react-player.propTypes.soundcloudConfig.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.soundcloudConfig.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.style" id="apidoc.module.react-player.propTypes.style">module react-player.propTypes.style</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.style.style" id="apidoc.element.react-player.propTypes.style.style">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.style.isRequired" id="apidoc.element.react-player.propTypes.style.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.style.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.url" id="apidoc.module.react-player.propTypes.url">module react-player.propTypes.url</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.url.url" id="apidoc.element.react-player.propTypes.url.url">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>url
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">url = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.url.isRequired" id="apidoc.element.react-player.propTypes.url.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.url.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.vidmeConfig" id="apidoc.module.react-player.propTypes.vidmeConfig">module react-player.propTypes.vidmeConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vidmeConfig.vidmeConfig" id="apidoc.element.react-player.propTypes.vidmeConfig.vidmeConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>vidmeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vidmeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vidmeConfig.isRequired" id="apidoc.element.react-player.propTypes.vidmeConfig.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.vidmeConfig.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.vimeoConfig" id="apidoc.module.react-player.propTypes.vimeoConfig">module react-player.propTypes.vimeoConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vimeoConfig.vimeoConfig" id="apidoc.element.react-player.propTypes.vimeoConfig.vimeoConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>vimeoConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vimeoConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.vimeoConfig.isRequired" id="apidoc.element.react-player.propTypes.vimeoConfig.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.vimeoConfig.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.volume" id="apidoc.module.react-player.propTypes.volume">module react-player.propTypes.volume</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.volume.volume" id="apidoc.element.react-player.propTypes.volume.volume">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>volume
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">volume = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (!this.isReady || !this.player) return;
+    this.player.time(this.getDuration() * fraction);
+  }
+}, {
+  key: &#x27;setVolume&#x27;,
+  value: function setVolume(fraction) {
+    if (!this.isReady || !this.player || !this.player.volume) return;
+    this.player.<span class="apidocCodeKeywordSpan">volume</span>(fraction);
+  }
+}, {
+  key: &#x27;setPlaybackRate&#x27;,
+  value: function setPlaybackRate(rate) {
+    if (!this.isReady || !this.player || !this.player.playbackRate) return;
+    this.player.playbackRate(rate);
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.volume.isRequired" id="apidoc.element.react-player.propTypes.volume.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.volume.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.width" id="apidoc.module.react-player.propTypes.width">module react-player.propTypes.width</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.width.width" id="apidoc.element.react-player.propTypes.width.width">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>width
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">width = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.width.isRequired" id="apidoc.element.react-player.propTypes.width.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.width.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.propTypes.youtubeConfig" id="apidoc.module.react-player.propTypes.youtubeConfig">module react-player.propTypes.youtubeConfig</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.youtubeConfig.youtubeConfig" id="apidoc.element.react-player.propTypes.youtubeConfig.youtubeConfig">
+        function <span class="apidocSignatureSpan">react-player.propTypes.</span>youtubeConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">youtubeConfig = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.propTypes.youtubeConfig.isRequired" id="apidoc.element.react-player.propTypes.youtubeConfig.isRequired">
+        function <span class="apidocSignatureSpan">react-player.propTypes.youtubeConfig.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-player.utils" id="apidoc.module.react-player.utils">module react-player.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-player.utils.parseStartTime" id="apidoc.element.react-player.utils.parseStartTime">
+        function <span class="apidocSignatureSpan">react-player.utils.</span>parseStartTime
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseStartTime(url) {
+  var match = url.match(MATCH_START_QUERY);
+  if (match) {
+    var stamp = match[1];
+    if (stamp.match(MATCH_START_STAMP)) {
+      return parseStartStamp(stamp);
+    }
+    if (MATCH_NUMERIC.test(stamp)) {
+      return parseInt(stamp, 10);
+    }
+  }
+  return 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
